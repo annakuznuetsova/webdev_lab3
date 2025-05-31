@@ -8,10 +8,8 @@ import androidx.recyclerview.widget.DiffUtil;
 import java.util.List;
 
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder> {
-
     private List<RoomEntity> rooms;
     private final OnRoomLongClickListener longClickListener;
-
     private final OnRoomClickListener clickListener;
 
     public RoomAdapter(List<RoomEntity> roomList, OnRoomLongClickListener longClickListener, OnRoomClickListener clickListener) {

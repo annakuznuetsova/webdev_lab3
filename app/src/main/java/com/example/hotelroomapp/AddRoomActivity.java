@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class AddRoomActivity extends AppCompatActivity {
     private EditText roomNumberInput, roomTypeInput, roomPriceInput;
     private CheckBox availabilityCheckbox, petsCheckbox, smokingCheckbox;
-
     private AppDatabase db;
 
     @Override

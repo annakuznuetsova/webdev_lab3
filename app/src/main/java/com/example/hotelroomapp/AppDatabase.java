@@ -6,7 +6,6 @@ import android.content.Context;
 @Database(entities = {RoomEntity.class}, version = 3)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase instance;
-
     public abstract RoomDao roomDao();
     @SuppressWarnings("deprecation")
     public static synchronized AppDatabase getInstance(Context context) {
