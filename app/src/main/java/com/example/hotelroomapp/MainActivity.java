@@ -7,6 +7,7 @@ import android.os.*;
 import android.view.*;
 import android.widget.*;
 import androidx.appcompat.app.*;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.recyclerview.widget.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -45,9 +46,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch availableOnlySwitch = findViewById(R.id.availableOnlySwitch);
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch petsSwitch = findViewById(R.id.petsSwitch);
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch smokingSwitch = findViewById(R.id.smokingSwitch);
+        SwitchCompat availableOnlySwitch = findViewById(R.id.availableOnlySwitch);
+        SwitchCompat petsSwitch = findViewById(R.id.petsSwitch);
+        SwitchCompat smokingSwitch = findViewById(R.id.smokingSwitch);
+
         EditText minPriceInput = findViewById(R.id.minPriceInput);
         EditText maxPriceInput = findViewById(R.id.maxPriceInput);
         Button applyFilterButton = findViewById(R.id.applyFilterButton);
@@ -161,9 +163,9 @@ public class MainActivity extends AppCompatActivity {
     private void setupFilterLogic() {
         EditText minPriceInput = findViewById(R.id.minPriceInput);
         EditText maxPriceInput = findViewById(R.id.maxPriceInput);
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch availableOnlySwitch = findViewById(R.id.availableOnlySwitch);
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch petsSwitch = findViewById(R.id.petsSwitch);
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch smokingSwitch = findViewById(R.id.smokingSwitch);
+        SwitchCompat availableOnlySwitch = findViewById(R.id.availableOnlySwitch);
+        SwitchCompat petsSwitch = findViewById(R.id.petsSwitch);
+        SwitchCompat smokingSwitch = findViewById(R.id.smokingSwitch);
         Button applyFilterButton = findViewById(R.id.applyFilterButton);
 
         applyFilterButton.setOnClickListener(v -> {
