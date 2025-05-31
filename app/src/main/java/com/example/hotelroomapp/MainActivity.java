@@ -214,7 +214,15 @@ public class MainActivity extends AppCompatActivity {
 
             filterForm.setVisibility(View.GONE);
             adapter.setRooms(filteredRooms);
-            emptyMessage.setVisibility(filteredRooms.isEmpty() ? View.VISIBLE : View.GONE);
+            Button addButton = findViewById(R.id.addButton);
+
+            if (filteredRooms.isEmpty()) {
+                emptyMessage.setVisibility(View.VISIBLE);
+            } else {
+                emptyMessage.setVisibility(View.GONE);
+            }
+            addButton.bringToFront();
+            addButton.setVisibility(View.VISIBLE);
         });
     }
 }

@@ -4,6 +4,7 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
     android:background="@color/soft_moss"
     tools:context=".MainActivity">
 
@@ -120,6 +121,7 @@
 
     <Button
         android:id="@+id/addButton"
+        android:elevation="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
