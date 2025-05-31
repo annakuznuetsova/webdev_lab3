@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HotelRoomApp</string>
+    <string name="room_number">Room #%1$d</string>
+    <string name="room_type">Type: %1$s</string>
+    <string name="room_price">Price: $%1$.2f</string>
+    <string name="room_available">Available</string>
+    <string name="room_booked">Booked</string>
+    <string name="allows_pets">Allows Pets</string>
+    <string name="smoking_allowed">Smoking Allowed</string>
+    <string name="save_room">Save Room</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="room_number_hint">Room Number</string>
+    <string name="room_type_hint">Room Type (e.g., Single, Double)</string>
+    <string name="room_price_hint">Price</string>
+    <string name="button_update_room">Update Room</string>
+    <string name="filter_rooms">🔍 Filter Rooms</string>
+    <string name="min_price">Min Price</string>
+    <string name="max_price">Max Price</string>
+    <string name="available_only">Available only</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="clear_all_filters">Clear All Filters</string>
+    <string name="no_matching_rooms">No rooms match the specified filters.</string>
+    <string name="add_room">Add Room</string>
+    <string name="popup_welcome">Welcome!\n• Tap to edit\n• Long-press to delete</string>
+    <string name="close_popup_description">Close popup</string>
+</resources>

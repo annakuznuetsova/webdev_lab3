@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="Theme.HotelRoomApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/soft_moss</item>
+        <item name="android:textColor">@color/vintage_brown</item>
+        <item name="android:buttonStyle">@style/VintageButton</item>
+        <item name="alertDialogTheme">@style/CustomAlertDialog</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/forest_green</item>
+    </style>
+
+    <style name="VintageButton" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/forest_green</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+</resources>

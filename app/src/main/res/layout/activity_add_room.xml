@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/roomNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:hint="@string/room_number_hint"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/roomTypeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:autofillHints=""
+            android:minHeight="48dp"
+            android:hint="@string/room_type_hint"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/roomPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:hint="@string/room_price_hint"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <CheckBox
+            android:id="@+id/availabilityCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/room_available" />
+
+        <CheckBox
+            android:id="@+id/petsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/allows_pets" />
+
+        <CheckBox
+            android:id="@+id/smokingCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/smoking_allowed" />
+
+        <Button
+            android:id="@+id/saveRoomButton"
+            android:text="@string/save_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/forest_green"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_home_24"
+            android:contentDescription="@string/back_to_home"
+            android:layout_gravity="start" />
+    </LinearLayout>
+</ScrollView>

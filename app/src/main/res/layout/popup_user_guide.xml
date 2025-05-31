@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg"
+    android:padding="20dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:id="@+id/popupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_welcome"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/vintage_brown"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp" />
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="@string/close_popup_description" />
+</RelativeLayout>
